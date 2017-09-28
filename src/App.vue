@@ -10,7 +10,7 @@
 			<MatNavItem icon="video_library" label="Videos" link="videos" router/>
 			<MatNavItem icon="work" label="PAIS" link="pais" router/>
 		</MatNav>
-		<main>
+		<main class="main">
       <!-- <img src="./assets/logo.png" alt="Vue.js PWA"> -->
       <router-view></router-view>
     </main>
@@ -38,14 +38,16 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+	height: 100%;
+	width: 100%;
 }
 
-main {
+.main {
   text-align: center;
-  padding-top: 56px;
+  margin-top: 56px;
 	margin-left: 56px;
-	height: 100%;
-	width: 100%
+	height: calc(100% - 56px);
+	width: calc(100% - 56px);
 }
 
 header {
@@ -58,7 +60,6 @@ header {
 	position: fixed;
 	z-index: 2;
   box-shadow: 0px 4px 4px rgba(0,0,0, 0.24);
-	position: fixed;
 	top: 0px;
 }
 .headershadow{
