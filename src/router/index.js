@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import Videos from '@/components/Videos'
-import Pais from '@/components/pais'
+import Pais from '@/components/Pais'
 
 Vue.use(Router)
 
