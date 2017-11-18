@@ -1,20 +1,4 @@
 // Copyright © SimplyCodin 2017
-$MatNavmenuheight: 56px !default
-$MatNavnavcolor: red !default
-$MatNavtoppadding: 56px !default
-
-$MatNavmenuitemmaxwidth: 168px !default
-$MatNavmenuitemminwidth: 80px !default
-
-// $MatNavtextcolor: rgba(0,0,0,0.54)
-$MatNavbelowtext: 10px !default
-$MatNaviconcolor: #ffffff !default
-$MatNaviconmargin: 6px !default
-$MatNaviconsize: 24px !default
-$MatNavtextcolor: #ffffff !default
-
-$MatNavcontent: main !default
-$MatNavcontentoffset: 5px !default
 
 .MatNav
 	position: fixed
@@ -39,6 +23,7 @@ $MatNavcontentoffset: 5px !default
 	max-width: $MatNavmenuitemmaxwidth
 	min-width: $MatNavmenuitemminwidth
 	height: $MatNavmenuheight
+	text-decoration: none
 .MatNav-Icon
 	color: $MatNavtextcolor
 	padding: 0
@@ -53,10 +38,8 @@ $MatNavcontentoffset: 5px !default
 	margin: 0 0 $MatNavbelowtext 0
 	color: $MatNaviconcolor
 	bottom: 0
-#{$MatNavcontent}
-	margin: 0 0 $MatNavmenuheight 0
-a[class= "MatNav-Item-Container"]
-	text-decoration: none
+// #{$MatNavcontent}
+// 	margin: 0 0 $MatNavmenuheight 0
 
 @media screen and (min-width: 768px)
 	.MatNav
