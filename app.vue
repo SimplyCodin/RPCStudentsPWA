@@ -2,7 +2,7 @@
   <div id="app">
     <header>
       <div class="headershadow">
-        <span>Vue.js PWA</span>
+        <span>RPCStudents</span>
       </div>
     </header>
     <MatNav>
