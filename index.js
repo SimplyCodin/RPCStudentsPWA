@@ -5,7 +5,7 @@ if (process.env.NODE_ENV === 'production') {
   require('./serviceworker')
 }
 
-
+Vue.config.devtools = true
 new Vue({
   el: '#app',
   template:'<App/>',

@@ -1,9 +1,9 @@
 <template>
-	<a class="MatNav-Item-Container" v-bind:href="link" v-if="router == null">
+	<a class="MatNav-Item-Container" :href="link" v-if="router == null">
 		<i class="material-icons MatNav-Icon">{{ icon }}</i>
 		<p class="MatNav-Label">{{ label }}</p>
 	</a>
-	<router-link v-bind:to="link" class="MatNav-Item-Container" v-else>
+	<router-link :to="link" class="MatNav-Item-Container" v-else>
 		<i class="material-icons MatNav-Icon">{{ icon }}</i>
 		<p class="MatNav-Label">{{ label }}</p>
 	</router-link>

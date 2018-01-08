@@ -1,15 +1,15 @@
 <template>
-  <div class="card" :class="{cardSquare: isSquare}" :style="{color: data.color, background: data.background, backgroundSize: scaling}">
+	<div class="card" :class="{cardSquare: isSquare}" :style="{color: data.color, background: data.background, backgroundSize: scaling}" key="Card">
 		<h1 class="cardTitle">
 			{{ data.title }}
-			<i class="cardButtons" v-for="button in data.buttons" :key="button.icon" >
-				<a :href="button.link" :style="{color: data.color, textDecoration: underline}" target="_blank">
+			<span>
+				<a v-for="button in data.buttons" :key="button.icon" :href="button.link" class="cardButtons" :style="{color: data.color, textDecoration: underline}" target="_blank">
 					{{ button.icon }}
 				</a>
-			</i>
+			</span>
 		</h1>
 		<div class="cardContent"> {{ data.message }} </div>
-  </div>
+	</div>
 </template>
 
 <script>
@@ -52,12 +52,12 @@
 		box-shadow: 0px 1px 3px rgba(255,255,255,0.4)
 		height: 180px
 		width: 320px
-		margin: 0px auto
+		margin: 0
 		display: block
 		position: relative
 		background-size: cover
-	// .cardSquare
-	// 	height: 320px
+	.cardSquare
+		height: 320px
 	.cardTitle
 		margin: 0
 		font-family: sans-serif
@@ -69,7 +69,7 @@
 		bottom: 0
 		width: 100%
 	.cardButtons
-		font-family: 'Material Icons'
+		font-family: 'Material Icons', sans-serif
 		font-weight: normal
 		font-style: normal
 		font-size: 24px

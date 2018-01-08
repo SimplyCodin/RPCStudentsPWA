@@ -29,7 +29,6 @@
 	$MatNavcontentoffset: 5px !default
 
 	@import ./MatNav
-
 	@media screen and (min-width: 768px)
 		.MatNav-Container, .MatNav
 			margin-top: 56px
@@ -37,16 +36,12 @@
 		margin-top: 56px
 	.material-icons
 		font-family: 'Material Icons'
-		font-weight: normal
+		speak: none
 		font-style: normal
-		font-size: 24px
-		line-height: 1
-		letter-spacing: normal
+		font-weight: normal
+		font-variant: normal
 		text-transform: none
-		display: inline-block
-		white-space: nowrap
-		word-wrap: normal
-		direction: ltr
-		-moz-font-feature-settings: 'liga'
-		-moz-osx-font-smoothing: grayscale
+		line-height: 1
+	.MatNav
+		z-index: 1
 </style>

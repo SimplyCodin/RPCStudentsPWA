@@ -1,24 +1,24 @@
 <template>
   <div id="app">
     <header>
-			<div class="headershadow">
-      <span>Vue.js PWA</span>
-		</div>
+      <div class="headershadow">
+        <span>Vue.js PWA</span>
+      </div>
     </header>
-		<MatNav>
-			<MatNavItem icon="home" label="Home" link="/" router/>
-			<MatNavItem icon="video_library" label="Videos" link="/videos" router/>
-			<MatNavItem icon="work" label="PAIS" link="/pais" router/>
-		</MatNav>
-		<main class="main">
+    <MatNav>
+      <MatNavItem icon="home" label="Home" link="/" router/>
+      <MatNavItem icon="video_library" label="Videos" link="videos" router/>
+      <MatNavItem icon="work" label="PAIS" link="pais" router/>
+    </MatNav>
+    <main class="main">
       <router-view></router-view>
     </main>
   </div>
 </template>
 
 <script>
-import MatNav from '@/MatNav.vue'
-import MatNavItem from '@/MatNavItem.vue'
+import MatNav from '@/MatNav'
+import MatNavItem from '@/MatNavItem'
 export default {
 	name: 'app',
 	components: {MatNav, MatNavItem}
@@ -30,7 +30,9 @@ export default {
   font-family: 'Material Icons'
   font-style: normal
   font-weight: 400
+  src: url(MaterialIcons-Regular.eot) /* For IE6-8 */
   src: local('Material Icons'), local('MaterialIcons-Regular'), url(MaterialIcons-Regular.woff2) format('woff2'), url(MaterialIcons-Regular.woff) format('woff'), url(MaterialIcons-Regular.ttf) format('truetype')
+
 
 html, body, #app 
   margin: 0
@@ -51,7 +53,6 @@ html, body, #app
   height: calc(100% - 112px)
   width: 100%
 
-
 @media screen and (min-width: 768px)
   .main 
     margin-left: 56px
@@ -68,7 +69,7 @@ header
   position: fixed
   box-shadow: 0px 4px 4px rgba(0,0,0, 0.24)
   top: 0px
-  z-index: 1
+  z-index: 2
 
 .headershadow
   box-shadow: 0px 0px 4px rgba(0,0,0, 0.12)
@@ -83,4 +84,26 @@ header span
   font-weight: 400
   box-sizing: border-box
   padding-top: 16px
+
+.material-icons 
+  font-family: 'Material Icons'
+  font-weight: normal
+  font-style: normal
+  font-size: 24px  /* Preferred icon size */
+  display: inline-block
+  line-height: 1
+  text-transform: none
+  letter-spacing: normal
+  word-wrap: normal
+  white-space: nowrap
+  direction: ltr
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale
+  /* Support for IE. */
+  font-feature-settings: 'liga'
+
 </style>

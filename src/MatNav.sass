@@ -6,6 +6,7 @@
 	height: $MatNavmenuheight
 	background-color: $MatNavnavcolor
 	width: 100%
+	display: block
 .MatNav-Container
 	width: 100%
 	display: flex
@@ -47,7 +48,7 @@
 		border-left: 1px #efefef
 	.MatNav-Container
 		margin-top: $MatNavtoppadding
-		height: calc(100% - $MatNavtoppadding)
+		height: calc(100% - #{$MatNavtoppadding})
 		width: $MatNavmenuheight
 		flex-direction: column
 		justify-content: unset

@@ -1,8 +1,6 @@
 <template>
-	<div class="full">
-		<div v-for="item in items" :key="item.title" > 
-			<card :data="item"></card>
-		</div>
+	<div class="full" key="home">
+		<card v-for="item in items" :key="item.key" :data="item"></card>
 	</div>
 </template>
 <script>
@@ -15,6 +13,7 @@
 				items:[
 					{
 						title:'Impact',
+						key:'Impact',
 						buttons:[{icon:"link", link:'//rpc.fm/impact'},],
 						buttonAlign: 'right',
 						message:'$55 before Dec. 31 - RPC.FM/IMPACT',
@@ -23,7 +22,7 @@
 						align:'center',
 					},
 					{
-						title:'',
+						key:'Misson 56',
 						buttons:[],
 						message:'5th and 6th Graders',
 						background:'url(56DAL.png)',
@@ -31,7 +30,7 @@
 						align:'center',
 					},
 					{
-						title:'',
+						key:'Mission 78',
 						buttons:[],
 						message:'7th and 8th Graders',
 						background:'url(78HOU.png)',
@@ -39,21 +38,21 @@
 						align:'center',
 					},
 					{
-						title:'',
+						key:'Mission 910',
 						message:'9th and 10th Graders',
 						background:'url(910BZE.png)',
 						color:'rgba(0,0,0,0.75)',
 						align:'center',
 					},
 					{
-						title:'',
+						key:'Mission 112',
 						message:'11th and 12th Graders',
 						background:'url(1112NYC.png)',
 						color:'rgba(0,0,0,0.75)',
 						align:'center',
 					},
 					{
-						title:'',
+						key:'Spirital Warfare',
 						message:'Rockpointe',
 						background:'url(SpiritWar.png)',
 						color:'rgba(0,0,0,0.75)',
@@ -65,20 +64,23 @@
 	}
 </script>
 <style lang="sass">
-	html,body,.full
+	html,body, .full
 		width: 100%
 		background-color: #e4e4e4
-		position: absolute
 		margin: 0
+		position: absolute
 	.full
-		background-color: #e4e4e4
 		display: grid
 		grid-gap: 20px
-		grid-template-columns: repeat(auto-fill, 320px)
 		grid-auto-rows: 180px
 		padding: 20px
-		width: calc(100% - 20px)
+		width: calc(100% - 40px)
+		margin-bottom: 56px
+		justify-content: center
 	@media screen and (min-width: 768px)
 		.full 
 			width: calc(100% - 96px)
+			margin-bottom: unset
+			grid-template-columns: repeat(auto-fill, 320px)
+			justify-content: unset
 </style>
