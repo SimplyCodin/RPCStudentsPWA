@@ -17,8 +17,8 @@
 </template>
 
 <script>
-import MatNav from '@/MatNav'
-import MatNavItem from '@/MatNavItem'
+import MatNav from '@/MatNav.vue'
+import MatNavItem from '@/MatNavItem.vue'
 export default {
 	name: 'app',
 	components: {MatNav, MatNavItem}

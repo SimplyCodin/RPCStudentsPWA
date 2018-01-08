@@ -16,6 +16,7 @@
   },
   "scripts": {
     "start": "poi",
-    "startPWA": "poi --env.NODE_ENV production"
+    "startPWA": "poi --env.NODE_ENV production",
+    "build": "poi build"
   }
 }
