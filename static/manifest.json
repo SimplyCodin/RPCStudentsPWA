@@ -1,9 +1,9 @@
 {
-	"name": "My Vue App",
-	"short_name": "My Vue App",
+	"name": "RPCStudents",
+	"short_name": "RPCStudents",
 	"start_url": "/#/",
 	"display": "standalone",
 	"orientation": "portrait",
 	"background_color": "#fff",
-	"theme_color": "pink"
+	"theme_color": "#1F96EC"
 }
