@@ -3,7 +3,7 @@
 		<a href="https://vimeo.com/rpcstudents" class="vimeo">
 			<h1>Open Vimeo</h1>
 			<div class="open">
-				<img src="vimeo_icon.png" alt="Vimeo App Icon">
+				<img src="assets/vimeo_icon.png" alt="Vimeo App Icon">
 			</div>
 		</a>
 	</div>
