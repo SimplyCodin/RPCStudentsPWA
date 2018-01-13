@@ -26,7 +26,7 @@
 						buttons:[{icon:"instagram", link:'//instagram.com/luca_wuerz'},],
 						buttonAlign: 'right',
 						message:'',
-						background:'url(Impact2017.png)',
+						background:'url(http://via.placeholder.com/320)',
 						color:'rgba(0,0,0,0.75)',
 						align:'center',
 					},
@@ -35,7 +35,7 @@
 						buttons:[{icon:"instagram", link:'//instagram.com/dani__frei'},{icon:"facebook", link:"https://www.facebook.com/dani.elf.100"}],
 						buttonAlign: 'right',
 						message:'',
-						background:'url(Impact2017.png)',
+						background:'url(http://via.placeholder.com/320)',
 						color:'rgba(0,0,0,0.75)',
 						align:'center',
 					},
@@ -58,7 +58,7 @@
 	.full
 		display: grid
 		grid-gap: 20px
-		grid-auto-rows: 180px
+		grid-auto-rows: 320px
 		padding: 20px
 		width: calc(100% - 40px)
 		margin-bottom: 56px

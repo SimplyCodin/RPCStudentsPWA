@@ -13,3 +13,4 @@ runtime.install({
     location.reload()
   }
 })
+runtime.update()

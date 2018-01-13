@@ -6,6 +6,8 @@
   "author": "SimplyCodin",
   "license": "MIT",
   "dependencies": {
+    "material-design-icons": "^3.0.1",
+    "material-icons": "^0.1.0",
     "offline-plugin": "^4.8.5",
     "poi": "^9.6.3",
     "vue-router": "^3.0.1"
