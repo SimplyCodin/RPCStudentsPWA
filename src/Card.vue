@@ -4,7 +4,7 @@
 			{{ data.title }}
 			<span>
 				<a v-for="button in data.buttons" :key="button.icon" :href="button.link" class="cardButtons" :style="{color: data.color, textDecoration: underline}" target="_blank">
-					{{ button.icon }}
+					<icon :icon="button.icon" class="cardIcons"></icon>
 				</a>
 			</span>
 		</h1>
@@ -13,9 +13,11 @@
 </template>
 
 <script>
+	import icon from "@/Icon.vue"
 	export default {
 		name: "Card",
 		props: ["data", "square"],
+		components: {icon},
 		data() {
 			return {
 				activeColor: 'red',
@@ -83,4 +85,6 @@
 		-moz-font-feature-settings: 'liga'
 		-moz-osx-font-smoothing: grayscale
 		display: inline-block
+	.cardIcons
+		padding-right: 5px
 </style>

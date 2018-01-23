@@ -63,7 +63,7 @@
 		}
 	}
 </script>
-<style lang="sass">
+<style lang="sass" scoped>
 	html,body, .full
 		width: 100%
 		background-color: #e4e4e4
