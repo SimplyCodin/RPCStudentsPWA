@@ -49,3 +49,4 @@ jspm_packages
 oldBuild
 icons
 dist
+yarn.lock
