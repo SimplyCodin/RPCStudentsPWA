@@ -13,6 +13,7 @@
     "pkgSVG": "gulp pkg"
   },
   "dependencies": {
+    "env-cmd": "^7.0.0",
     "firebase": "^4.9.0",
     "offline-plugin": "^4.8.5",
     "vue-router": "^3.0.1",
@@ -20,11 +21,13 @@
     "vuefire": "^1.4.5"
   },
   "devDependencies": {
+    "dotenv-webpack": "^1.5.4",
     "gulp": "^3.9.1",
     "gulp-flatten": "^0.4.0",
     "gulp-rename": "^1.2.2",
     "gulp-svgstore": "^6.1.1",
     "material-design-icons": "^3.0.1",
+    "node-env-run": "^2.0.1",
     "node-sass": "^4.7.2",
     "path": "^0.12.7",
     "poi": "^9.6.13",

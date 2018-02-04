@@ -1,13 +1,7 @@
 import Firebase from 'firebase'
-import { apiKey, authDomain, databaseURL, projectId, storageBucket, messagingSenderId } from './env'
 
 const firebaseApp = Firebase.initializeApp({
-	apiKey: apiKey,
-	authDomain: authDomain,
-	databaseURL: databaseURL,
-	projectId: projectId,
-	storageBucket: storageBucket,
-	messagingSenderId: messagingSenderId
+	databaseURL: 'https://rpc-students.firebaseio.com'
 });
 
 // Export the database for components to use.

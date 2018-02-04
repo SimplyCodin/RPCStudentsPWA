@@ -92,6 +92,7 @@
 	.full
 		grid-auto-rows: 320px
 	@media screen and (min-width: 768px)
-		.full 
+		.full
 			grid-template-columns: repeat(auto-fill, 320px)
+			width: calc(100% - 96px)
 </style>

@@ -1,4 +1,5 @@
 const OfflinePlugin = require('offline-plugin')
+// const DotENV = require('dotenv-webpack')
 
 module.exports = options => ({
 	templateCompiler: true,
@@ -9,6 +10,8 @@ module.exports = options => ({
 			config.plugin('offline')
 			.use(OfflinePlugin)
 		}
+		// config.plugin('env')
+		// .use(DotENV)
 	},
 
 })
