@@ -3,7 +3,7 @@
 		<h1 class="cardTitle">
 			{{ data.title }}
 			<span>
-				<a v-for="button in data.buttons" :key="button.icon" :href="button.link" class="cardButtons" :style="{color: data.color, textDecoration: underline}" target="_blank">
+				<a v-for="button in data.buttons" :key="button.icon" :href="button.link" class="cardButtons" :style="{color: data.color, textDecoration: underline}" target="_blank" rel="noopener">
 					<icon :icon="button.icon" class="cardIcons"></icon>
 				</a>
 			</span>

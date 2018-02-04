@@ -48,3 +48,5 @@ jspm_packages
 
 oldBuild
 icons
+env.js
+dist
