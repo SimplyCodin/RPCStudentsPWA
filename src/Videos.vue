@@ -1,10 +1,8 @@
 <template>
 	<div id="videos" key="videos">
 		<a href="https://vimeo.com/rpcstudents" class="vimeo">
-			<h1>Open Vimeo</h1>
-			<div class="open">
-				<img src="assets/vimeo_icon.png" alt="Vimeo App Icon">
-			</div>
+			<h1 style="margin: 0px">Open Vimeo</h1>
+			<img src="assets/vimeo_icon.png" alt="Vimeo App Icon" class="vimeoLogo">
 		</a>
 	</div>
 </template>
@@ -22,10 +20,13 @@
 		align-items: center
 		justify-content: center
 		height: 100%
+		background-color: unset
 	.vimeo
 		color: #19b7ea
 		text-decoration: none
 		background-color: white
-		height: 180px
-		width: 180px
+		height: 196px
+		width: 196px
+	.vimeoLogo
+		margin: 0 38px 38px 38px
 </style>
