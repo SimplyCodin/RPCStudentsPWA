@@ -25,7 +25,7 @@
 	height: $MatNavmenuheight
 	text-decoration: none
 .MatNav-Icon
-	color: $MatNavtextcolor
+	color: transparentize($MatNavtextcolor,0.2)
 	padding: 0
 	margin: $MatNaviconmargin
 	display: block
@@ -38,6 +38,8 @@
 	margin: 0 0 $MatNavbelowtext 0
 	color: $MatNaviconcolor
 	bottom: 0
+.router-link-active > svg
+	color: $MatNavtextcolor
 
 @media screen and (min-width: 768px)
 	.MatNav

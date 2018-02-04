@@ -23,5 +23,7 @@ export default new Router({
       name: 'Pais',
       component: Pais
     }
-  ]
+  ],
+  linkExactActiveClass: 'router-link-active',
+  linkActiveClass: ''
 })

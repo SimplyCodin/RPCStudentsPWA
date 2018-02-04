@@ -1,30 +1,36 @@
 {
   "name": "RPCStudentProd",
-  "version": "1.0.0-beta",
-  "description": "Yet Another Material Design Framework",
+  "version": "1.0.0",
   "main": "index.js",
   "author": "SimplyCodin",
   "license": "MIT",
+  "scripts": {
+    "start": "poi",
+    "startPWA": "poi --env.NODE_ENV production",
+    "startAdmin": "poi --entry admin/index.js",
+    "build": "poi build",
+    "pullSVG": "gulp pull",
+    "pkgSVG": "gulp pkg"
+  },
   "dependencies": {
+    "env-cmd": "^7.0.0",
+    "firebase": "^4.9.0",
     "offline-plugin": "^4.8.5",
-    "poi": "^9.6.3",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue-touch": "^2.0.0-beta.4",
+    "vuefire": "^1.4.5"
   },
   "devDependencies": {
+    "dotenv-webpack": "^1.5.4",
     "gulp": "^3.9.1",
     "gulp-flatten": "^0.4.0",
     "gulp-rename": "^1.2.2",
     "gulp-svgstore": "^6.1.1",
+    "material-design-icons": "^3.0.1",
+    "node-env-run": "^2.0.1",
     "node-sass": "^4.7.2",
     "path": "^0.12.7",
-    "sass-loader": "^6.0.6",
-    "material-design-icons": "^3.0.1"
-  },
-  "scripts": {
-    "start": "poi",
-    "startPWA": "poi --env.NODE_ENV production",
-    "build": "poi build",
-    "pullSVG": "gulp pull",
-    "pkgSVG": "gulp pkg"
+    "poi": "^9.6.13",
+    "sass-loader": "^6.0.6"
   }
 }
