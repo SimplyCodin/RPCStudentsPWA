@@ -3,7 +3,7 @@
 		<icon class="MatNav-Icon" :icon="icon"></icon>
 		<p class="MatNav-Label">{{ label }}</p>
 	</a>
-	<router-link :to="link" class="MatNav-Item-Container" v-else exact>
+	<router-link :to="link" class="MatNav-Item-Container" v-else>
 		<icon class="MatNav-Icon" :icon="icon"></icon>
 		<p class="MatNav-Label">{{ label }}</p>
 	</router-link>

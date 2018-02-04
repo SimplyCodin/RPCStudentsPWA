@@ -25,5 +25,5 @@ export default new Router({
     }
   ],
   linkExactActiveClass: 'router-link-active',
-  linkActiveClass: ''
+  linkActiveClass: 'use-router-link-exact'
 })
