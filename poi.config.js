@@ -8,9 +8,9 @@ module.exports = options => ({
 	extendWebpack(config) {
 		if (process.env.NODE_ENV === 'production'){
 			config.plugin('offline')
-			.use(OfflinePlugin,{
+			.use(OfflinePlugin ,[{
 				externals: ['https://rpc-students.firebaseio.com']
-			})
+			}])
 		}
 	},
 
