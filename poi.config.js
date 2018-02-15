@@ -9,9 +9,10 @@ module.exports = options => ({
 		if (process.env.NODE_ENV === 'production'){
 			config.plugin('offline')
 			.use(OfflinePlugin)
+			.options({
+				externals: ['https://rpc-students.firebaseio.com']
+			})
 		}
-		// config.plugin('env')
-		// .use(DotENV)
 	},
 
 })
