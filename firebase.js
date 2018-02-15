@@ -4,7 +4,7 @@ const firebaseApp = Firebase.initializeApp({
 	databaseURL: 'https://rpc-students.firebaseio.com'
 });
 
-Firebase.database().enablePersistence()
+firebaseApp.database().enablePersistence()
 
 // Export the database for components to use.
 // If you want to get fancy, use mixins or provide / inject to avoid redundant imports.
