@@ -1,0 +1,17 @@
+{
+	"name": "RPCS Nightly",
+	"short_name": "RPCStudents Nightly",
+	"start_url": "/#/",
+	"display": "standalone",
+	"orientation": "portrait",
+	"background_color": "#fff",
+	"theme_color": "#1F96EC",
+	"icons": [
+		{
+			"src": "/assets/nightly.png",
+			"sizes": "144x144",
+			"type": "image/png"
+		}
+	],
+	"gcm_sender_id": "103953800507"
+}
