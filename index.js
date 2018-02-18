@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import router from './router'
 import App from "./app"
-import VueFire from "vuefire"
 import VueTouch from 'vue-touch'
-if (process.env.NODE_ENV === 'production') {
-  require('./serviceworker')
-}
+import store from './store/index'
+import Card from '@/Card'
+require('./sw.js')
 
-Vue.use(VueFire)
+// Vue Library
 Vue.use(VueTouch, { name: 'v-touch' })
 
+// Vue Config
 VueTouch.config.swipe = {
   direction: 'horizontal'
 }
@@ -19,5 +19,8 @@ new Vue({
   el: '#app',
   template:'<App/>',
   components: {App},
-  router
+  router,
+  store
 })
+
+Vue.component('card', Card)
