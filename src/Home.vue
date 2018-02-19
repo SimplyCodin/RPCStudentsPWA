@@ -7,7 +7,6 @@
 </template>
 <script>
 	import { mapGetters, mapActions } from 'vuex'
-	import { db } from "../firebase"
 	export default {
 		name: "Home",
 		computed: mapGetters({items:'home'}),
@@ -15,9 +14,6 @@
 			goLeft: function() {
 				this.$router.push({name:'Videos'})
 			}
-		},
-		created() {
-			this.$store.dispatch('setHomeRef', db.ref("home/items"))
 		}
 	}
 </script>

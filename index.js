@@ -4,6 +4,7 @@ import App from "./app"
 import VueTouch from 'vue-touch'
 import store from './store/index'
 import Card from '@/Card'
+import { db } from "./firebase"
 require('./sw.js')
 
 // Vue Library
@@ -15,6 +16,7 @@ VueTouch.config.swipe = {
 }
 Vue.config.devtools = true
 
+//Global Components
 Vue.component('card', Card)
 
 new Vue({
@@ -22,5 +24,9 @@ new Vue({
   template:'<App/>',
   components: {App},
   router,
-  store
+  store,
+  beforeCreate() {
+    this.$store.dispatch('setHomeRef', db.ref("home/items"))
+    this.$store.dispatch('setPaisRef', db.ref("pais/items"))
+  }
 })
