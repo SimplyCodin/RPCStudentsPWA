@@ -15,6 +15,8 @@ VueTouch.config.swipe = {
 }
 Vue.config.devtools = true
 
+Vue.component('card', Card)
+
 new Vue({
   el: '#app',
   template:'<App/>',
@@ -22,5 +24,3 @@ new Vue({
   router,
   store
 })
-
-Vue.component('card', Card)
