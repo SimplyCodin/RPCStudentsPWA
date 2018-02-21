@@ -4,15 +4,15 @@ import App from "./app"
 import VueTouch from 'vue-touch'
 import store from './store/index'
 import Card from '@/Card'
-import { db } from "./firebase"
-require('./sw.js')
+import { db } from './firebase'
+import './sw.js'
 
 // Vue Library
 Vue.use(VueTouch, { name: 'v-touch' })
 
 // Vue Config
 VueTouch.config.swipe = {
-  direction: 'horizontal'
+	direction: 'horizontal'
 }
 Vue.config.devtools = true
 
@@ -20,13 +20,13 @@ Vue.config.devtools = true
 Vue.component('card', Card)
 
 new Vue({
-  el: '#app',
-  template:'<App/>',
-  components: {App},
-  router,
-  store,
-  beforeCreate() {
-    this.$store.dispatch('setHomeRef', db.ref("home/items"))
-    this.$store.dispatch('setPaisRef', db.ref("pais/items"))
-  }
+	el: '#app',
+	template:'<App/>',
+	components: {App},
+	router,
+	store,
+	beforeCreate() {
+		this.$store.dispatch('setHomeRef', db.ref("home/items"))
+		this.$store.dispatch('setPaisRef', db.ref("pais/items"))
+	}
 })

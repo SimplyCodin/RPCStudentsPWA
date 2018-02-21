@@ -5,9 +5,12 @@ module.exports = options => ({
 	copy:[{from:"assets",to:"assets"},{from:"static",to:"static"}],
 	extractCSS: false,
 	extendWebpack(config) {
-		if (options.mode === 'production'){
+		if (options.mode === 'production' || options.mode === 'test'){
 			config.plugin('offline')
 			.use(OfflinePlugin)
 		}
 	},
+	devServer:{
+		bonjour: true
+	}
 })

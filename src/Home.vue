@@ -1,8 +1,8 @@
 <template>
 	<v-touch v-on:swipeleft="goLeft">
-		<div class="full" key="home">
-			<card v-for="item in items" :key="item.key" :data="item"/>
-		</div>
+			<div class="full" key="home">
+				<card v-for="item in items" :key="item.key" :data="item"/>
+			</div>
 	</v-touch>
 </template>
 <script>
@@ -14,12 +14,12 @@
 			goLeft: function() {
 				this.$router.push({name:'Videos'})
 			}
-		}
+		},
 	}
 </script>
 <style lang="sass">
 	@import "views.sass"
-	html,body, .full
+	html,body,.full
 		@extend [container]
 	.full
 		grid-auto-rows: 180px
@@ -27,3 +27,4 @@
 		.full 
 			grid-template-columns: repeat(auto-fill, 320px)
 </style>
+//  pppxpx;[cc' [x;ppx;plx,.  uki, cic ic ikcxikv ikv iusdyx6zjyxjc hmj vh j kuj]]

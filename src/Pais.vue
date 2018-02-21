@@ -1,14 +1,21 @@
 <template>
+	<transition :name="transitionName">
 	<v-touch v-on:swiperight="goRight">
 		<div class="full" key="pais">
 			<card v-for="item in items" :key="item.title" :data="item" square></card>
 		</div>
 	</v-touch>
+	</transition>
 </template>
 <script>
 	import { mapGetters, mapActions } from 'vuex'
 	export default {
 		name: 'pais',
+		data() {
+			return {
+				transitionName: 'slide-right'
+			}
+		},
 		computed: mapGetters({items:'pais'}),
 		methods: {
 			goRight: function() {
@@ -19,7 +26,7 @@
 </script>
 <style lang="sass" scoped>
 	@import "views.sass"
-	html,body, .full
+	html,body,.full
 		@extend [container]
 	.full
 		grid-auto-rows: 320px
