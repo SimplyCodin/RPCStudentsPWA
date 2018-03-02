@@ -1,24 +1,26 @@
 {
-	"name": "RPCStudentProd",
-	"version": "1.0.0",
-	"main": "index.js",
-	"author": "SimplyCodin",
-	"license": "MIT",
-	"scripts": {
-		"start": "poi",
-		"build": "poi build",
-		"serve": "poi build && npx serve ./dist"
-	},
-	"dependencies": {
-		"firebase": "^4.9.0",
-		"node-sass": "^4.7.2",
-		"offline-plugin": "^4.8.5",
-		"poi": "^9.6.13",
-		"sass-loader": "^6.0.6",
-		"vue-router": "^3.0.1",
-		"vue-touch": "^2.0.0-beta.4",
-		"vuex": "^3.0.1",
-		"vuex-persist": "^1.1.1",
-		"vuexfire": "^2.3.0"
-	}
+  "name": "RPCStudents",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "SimplyCodin",
+  "license": "MIT",
+  "description": "A PWA for Rockpointe Church Students - Works best on Android",
+  "scripts": {
+    "start": "poi",
+    "build": "NODE_ENV=production poi build ",
+    "serve": "poi build && npx serve ./dist"
+  },
+  "dependencies": {
+    "firebase": "^4.9.0",
+    "node-sass": "^4.7.2",
+    "offline-plugin": "^4.8.5",
+    "poi": "^9.6.13",
+    "sass-loader": "^6.0.6",
+    "vue-router": "^3.0.1",
+    "vue-touch": "^2.0.0-beta.4",
+    "vuex": "^3.0.1",
+    "vuex-persist": "^1.1.1",
+    "vuexfire": "^2.3.0",
+    "@haiku/simplydesigns-rpcstudents": "latest"
+  }
 }

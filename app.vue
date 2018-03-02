@@ -81,6 +81,7 @@
 			width: calc(100% - 56px)
 			height: calc(100% - 56px)
 
+
 	.fade-enter-active, .fade-leave-active 
 		transition: opacity .5s ease
 	.fade-enter, .fade-leave-active 

@@ -1,10 +1,7 @@
 import Vue from 'vue'
-import * as firebase from 'firebase'
-import { firebaseAction, bindFirebaseRef, firebaseMutations } from 'vuexfire'
 import Vuex from 'vuex'
-import { fbApp } from "../firebase"
 import VuexPersistence from 'vuex-persist'
-fbApp
+import { firebaseAction, bindFirebaseRef, firebaseMutations } from 'vuexfire'
 
 const vuexLocal = new VuexPersistence({
 	storage: window.localStorage
@@ -21,12 +18,10 @@ const getters = {
 	pais: state => state.pais,
 }
 const actions = {
-	setHomeRef: firebaseAction( ( { bindFirebaseRef }, ref) => {
+	setHomeRef: firebaseAction(({ bindFirebaseRef }, ref) => {
 		bindFirebaseRef('home', ref)
 	}),
-	setPaisRef: firebaseAction( ( { bindFirebaseRef }, ref ) => {
-		bindFirebaseRef('pais', ref)
-	}),
+	setPaisRef: firebaseAction( ({ bindFirebaseRef }, ref) => { bindFirebaseRef('pais', ref) }),
 }
 
 export default new Vuex.Store({
