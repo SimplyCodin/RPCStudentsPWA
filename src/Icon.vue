@@ -1,6 +1,6 @@
 <template>
 	<svg width="24px" height="24px" style="fill:currentColor;">
-		<use :xlink:href="'/assets/icons.svg#'+icon"/>
+		<use :xlink:href="'/assets/icons.svg#'+icon" :href="'/assets/icons.svg#'+icon"/>
 	</svg>
 </template>
 
@@ -10,7 +10,3 @@
 		props: ['icon']
 	}
 </script>
-
-<style>
-
-</style>

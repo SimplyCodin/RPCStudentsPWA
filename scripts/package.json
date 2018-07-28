@@ -1,0 +1,19 @@
+{
+	"name": "SimplyScripts",
+	"version": "1.0.0",
+	"description": "Utils for Projects",
+	"main": "gulpfile.js",
+	"author": "SimplyCodin",
+	"license": "MIT",
+	"scripts": {
+		"pullSVG": "gulp pull",
+		"pkgSVG": "gulp pkg"
+	},
+	"dependencies": {
+		"gulp": "^3.9.1",
+		"gulp-flatten": "^0.4.0",
+		"gulp-rename": "^1.2.2",
+		"gulp-svgstore": "^6.1.1",
+		"material-design-icons": "^3.0.1"
+	}
+}
